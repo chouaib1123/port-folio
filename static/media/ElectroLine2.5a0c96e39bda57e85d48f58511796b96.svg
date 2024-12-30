@@ -1,0 +1,24 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="1347" height="124" viewBox="0 0 1347 124"
+                        fill="none">
+                        <g filter="url(#filter0_d_41_250)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1377.5 90.5L574.073 90.4999L517.5 39.8821L517.073 39.4999L516.5 39.4999L52.8267 39.4999C51.8801 34.102 47.1692 29.9999 41.5 29.9999C35.1487 29.9999 30 35.1486 30 41.4999C30 47.8512 35.1487 52.9999 41.5 52.9999C47.5144 52.9999 52.4504 48.3829 52.9572 42.4999L515.927 42.4999L572.5 93.1178L572.927 93.4999L573.5 93.4999L1377.5 93.5L1377.5 90.5ZM34 41.4999C34 37.3577 37.3579 33.9999 41.5 33.9999C45.6421 33.9999 49 37.3577 49 41.4999C49 45.642 45.6421 48.9999 41.5 48.9999C37.3579 48.9999 34 45.642 34 41.4999Z"
+                                fill="#2E86D8" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_41_250" x="0" y="-0.00012207" width="1407.5" height="123.5"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset />
+                                <feGaussianBlur stdDeviation="15" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.180026 0 0 0 0 0.525431 0 0 0 0 0.847179 0 0 0 1 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_41_250" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_41_250"
+                                    result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
