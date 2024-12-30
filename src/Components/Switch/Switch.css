@@ -1,0 +1,39 @@
+.switch-container {
+  #checkbox {
+    display: none;
+  }
+
+  .switch {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    width: fit-content;
+    padding: 15px 15px;
+
+    border: 2px solid var(--secondary-clr);
+    box-shadow: 0px 0px 20px var(--secondary-clr);
+    border-radius: 50px;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--secondary-clr);
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  .switch svg path {
+    fill: var(--secondary-clr);
+    transition: all 0.3s;
+  }
+  #checkbox:checked + .switch {
+    color: white;
+    background-color: var(--secondary-clr);
+    box-shadow: 0px 0px 40px var(--secondary-clr);
+  }
+  #checkbox:checked + .switch svg path {
+    fill: white;
+  }
+}

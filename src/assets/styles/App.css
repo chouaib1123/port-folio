@@ -1,0 +1,321 @@
+:root {
+  --primary-clr: rgba(8, 8, 8, 1);
+  --secondary-clr: rgba(46, 134, 216, 1);
+  --card-clr: #2e86d81a;
+  --neutral-clr: rgba(160, 172, 189, 1);
+  --last-clr: rgba(24, 61, 95, 1);
+
+  --text-clr: rgba(233, 233, 233, 1);
+
+  --ff-primary: "Rubik", serif;
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+  --fs-100: 20px;
+  --fs-200: 24px;
+  --fs-400: 48px;
+  --fs-500: 64px;
+
+  --fs-neutral: var(--fs-200);
+  --fs-primary-heading: var(--fs-500);
+  --fs-secondary-heading: var(--fs-400);
+  --fs-body: var(--fs-100);
+}
+
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fs-neutral {
+  font-size: var(--fs-neutral);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.fs-text {
+  font-size: var(--fs-body);
+}
+
+.bg-primary {
+  background-color: var(--primary-clr);
+}
+
+.bg-secondary {
+  background-color: var(--last-clr);
+}
+
+.bg-cards {
+  background-color: var(--card-clr);
+}
+
+.heading-colors {
+  color: var(--secondary-clr);
+}
+
+.text-color {
+  color: var(--text-clr);
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(30%);
+  transition: all 1s;
+}
+* {
+  font-family: var(--ff-primary);
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transform: translateX(0);
+}
+
+.detail-union.hidden {
+  filter: blur(0);
+  transform: translateY(0);
+  transform: translateX(0);
+}
+
+.skill-card:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.skill-card:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  position: absolute;
+  z-index: -9999999;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.footer-container label {
+  margin-left: 5px;
+}
+
+.topic-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-container {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1980px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  25% {
+    width: 50%;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  75% {
+    width: 0%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes moving {
+  0% {
+    top: 275px;
+    right: 0;
+  }
+
+  50% {
+    top: 100px;
+    right: -50px;
+  }
+
+  100% {
+    top: 275px;
+    right: 0;
+  }
+}
+
+.electro {
+  position: absolute;
+  top: 0%;
+  img {
+    width: 100%;
+    animation: shadowPulse 2s ease-in-out infinite;
+  }
+}
+
+.electroo {
+  top: 5%;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+@keyframes shadowPulse {
+  0% {
+    filter: drop-shadow(0 0 0 rgba(209, 209, 209, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(37, 37, 201, 0.7));
+  }
+  100% {
+    filter: drop-shadow(0 0 0 rgba(0, 0, 139, 0));
+  }
+}
+
+.Heading-div-speech {
+  max-width: 754px;
+  transition-delay: 200ms;
+}
+
+.flex-container {
+  position: relative;
+  margin: 120px 220px;
+}
+
+.button {
+  background-color: var(--last-clr);
+  cursor: pointer;
+
+  position: relative;
+  border: none;
+  transition: all 0.7s;
+}
+
+.glow {
+  text-shadow: 0px 0px 30px var(--last-clr);
+}
+
+.button span {
+  color: var(--text-clr);
+  font-size: var(--fs-200);
+  font-family: var(--ff-primary);
+  font-weight: bold;
+  margin: 7px 23px;
+  opacity: 0.7;
+  transition: all 0.7s;
+  z-index: -9999999;
+}
+
+.button::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: var(--last-clr);
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+
+  transition: all 1s;
+}
+
+.button:hover::before {
+  transform: translate(3.5px, 3px);
+  background-color: var(--text-clr);
+  box-shadow: 5px 3px 30px var(--last-clr);
+}
+
+.button:hover span {
+  opacity: 1;
+}
+
+.button:hover {
+  border-color: transparent;
+}
+
+.Section {
+  position: relative;
+}
+.bars .bar1,
+.bars .bar3 {
+  width: 70%;
+}
+
+.bars .bar2 {
+  transition: all 0.9s ease;
+}
+
+.navbar.active > .phone-button .bars .barre {
+  opacity: 1;
+}
+
+.navbar.active > .phone-button .bars .bar1 {
+  position: absolute;
+  transform: rotate(-135deg);
+  width: 100%;
+}
+
+.navbar.active > .phone-button .bars .bar3 {
+  position: absolute;
+  transform: rotate(135deg);
+  width: 100%;
+}
+
+.navbar.active > .phone-button .bars .bar2 {
+  transform: scale(0);
+}
+
+.cv-button {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-button {
+  margin-top: 80px;
+}
+
+.electro-night {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

@@ -1,0 +1,62 @@
+.solo-electro img {
+  width: 60%;
+}
+.solo-electro {
+  margin: 100px 0;
+  width: 100%;
+}
+.solo-electro1 {
+  position: relative;
+  .solo-electro12 {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: var(--primary-clr);
+    top: 0;
+    animation: colorCross 3s linear infinite;
+    transform: translateX(-100%);
+  }
+  .late {
+    animation-delay: 2s;
+  }
+}
+
+.solo-electro2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .solo-electro21 {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    background-color: var(--primary-clr);
+    animation: colorCross2 3s linear infinite;
+    transform: translateX(100%);
+  }
+  .late2 {
+    animation-delay: 2s;
+  }
+}
+
+@keyframes colorCross {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(150%);
+  }
+}
+@keyframes colorCross2 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-150%);
+  }
+}

@@ -1,0 +1,169 @@
+#section1 {
+  .education {
+    position: absolute;
+    right: 8%;
+    top: -5%;
+  }
+  .det {
+    margin-top: 170px;
+  }
+  .Heading-div-title {
+    margin-bottom: 20px;
+  }
+
+  .detail-title {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-200);
+    font-weight: var(--fw-bold);
+    color: var(--secondary-clr);
+  }
+
+  .detail-speech {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-100);
+    font-weight: var(--fw-regular);
+    color: var(--text-clr);
+    hyphens: auto;
+    word-wrap: break-word;
+    max-width: 458px;
+  }
+
+  .detail-container-end {
+    display: flex;
+    justify-content: end;
+  }
+
+  .details-container {
+    margin: 200px auto 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .detail3 {
+    margin-top: 100px;
+  }
+
+  .detail-union {
+    position: absolute;
+    z-index: -1;
+    top: 200px;
+    right: 40%;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+  .about-me-cards {
+    margin: 280px auto 136px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .about-me-cards .hide {
+    display: none;
+    opacity: 0;
+  }
+
+  .about-me-cards .active {
+    opacity: 1;
+    display: flex;
+  }
+  .LowOpacity {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .Heading-div-speech.LowOpacity,
+  .education.LowOpacity,
+  .detail-union.LowOpacity,
+  .detail-container-end.LowOpacity,
+  .detail-container-start.LowOpacity,
+  .cv-button.LowOpacity {
+    opacity: 0;
+    transition: none;
+  }
+  /* Add to existing styles */
+  .education,
+  .Heading-div-speech,
+  .detail-container-end,
+  .detail-container-start,
+  .detail-union,
+  .cv-button {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .Heading-div-speech.LowOpacity,
+  .education.LowOpacity,
+  .detail-container-end.LowOpacity,
+  .detail-container-start.LowOpacity,
+  .cv-button.LowOpacity {
+    opacity: 0.2;
+    transition: none;
+  }
+  .detail-union.hidden {
+    opacity: 0;
+  }
+  .Heading-div-speech:not(.LowOpacity) {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 0s;
+  }
+
+  .education:not(.LowOpacity) {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 0.3s;
+  }
+
+  .detail-union:not(.hidden) {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 0.6s;
+  }
+
+  .detail-container-end:nth-child(1):not(.LowOpacity) {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 1.5s;
+  }
+
+  .detail-container-start:not(.LowOpacity) {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 2s;
+  }
+
+  .detail-container-end:nth-child(3):not(.LowOpacity) {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 2.5s;
+  }
+
+  .cv-button:not(.LowOpacity) {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 3s;
+  }
+
+  .LowOpacity {
+    opacity: 0.5;
+  }
+  .line {
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    top: 2%;
+    right: 0;
+    box-shadow: 0px 0px 10px var(--secondary-clr);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 19%,
+      rgba(3, 142, 209, 1) 39%,
+      rgba(0, 212, 255, 1) 57%,
+      rgba(3, 142, 208, 1) 77%,
+      rgba(9, 9, 121, 1) 89%
+    );
+  }
+}

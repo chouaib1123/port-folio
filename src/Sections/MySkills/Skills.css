@@ -1,0 +1,57 @@
+.skill-slide {
+  height: 5rem;
+  width: auto !important;
+  padding: 1rem;
+  border: 3px solid #2e86d8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-container {
+  margin: 20px auto;
+}
+.react-multi-carousel-item {
+  padding: 0 10px;
+}
+.react-multi-carousel-dot-list {
+  display: none;
+}
+.react-multi-carousel-track {
+}
+
+.react-multiple-carousel__arrow {
+  display: none;
+}
+
+.skills .carousel-container .skill-slide svg {
+  color: #2e86d8; /* React blue */
+  transition: color 0.3s ease;
+}
+
+.skills-container {
+  margin: 100px 0 200px;
+}
+.skills .Heading-div-title,
+.skills .Heading-div-speech {
+  text-align: center;
+  margin: 0 auto;
+}
+.skills {
+  padding-top: 20px;
+}
+.skills .Heading-div-title {
+  margin-bottom: 1rem;
+}
+.skills .Heading-div-speech {
+  max-width: 70%;
+}
+/* Update carousel container */
+
+/* Update responsive settings in Skills.js:
+itemsToShow: 5,
+responsiveProps: [
+  { itemsToShow: 2, minWidth: 0 },
+  { itemsToShow: 3, minWidth: 768 },
+  { itemsToShow: 5, minWidth: 1024 }
+] */
